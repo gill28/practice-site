@@ -1,0 +1,72 @@
+////////////////////////////////
+// accordion
+//////////////////////////////
+.site__section  {
+    .site__section--accordion {
+        padding: 70px 0;
+        float: left;
+        width: 100%;
+    }
+}
+.accordion {
+    float: left;
+    width: 100%;
+    h2 {
+        color: $color-black;
+        text-transform: uppercase;
+    }
+}
+.accordion-intro h2:before {
+    margin: 0 10px 0 0;
+}
+.ac-row {
+    background: $color-green;
+    border-top: solid 1px #ccc;
+    max-width: 1168px;
+    margin: 0 auto;
+    position: relative;
+    &:first-of-type {
+        margin-top: 60px;
+    }
+    h5 {
+        font-style: uppercase;
+        color: $color-white;
+    }
+    &:last-of-type {
+        border-bottom: solid 1px $color-white;
+    }
+}
+.ac-title {
+    cursor: pointer;
+    padding: 20px 50px 20px 20px;
+    text-transform: capitalize;
+    text-align: left;
+    &:after {
+        color: $color-white;
+        font-family: FontAwesome;
+        content: '\f0d7';
+        font-size: 2.4rem;
+        font-weight: normal;
+        position: absolute;
+        right: 20px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}
+.active .ac-title:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.ac-content {
+    display: none;
+    padding: 20px;
+    text-align: left;
+    background: $color-md-grey;
+    color: $color-white;
+}

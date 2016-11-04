@@ -1,0 +1,27 @@
+/*-------------------------------
+Banner
+--------------------------------*/
+.site__section--bk {
+    background: url(/images/banner.png);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    .site__section__feature {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 280px;
+        text-align: center;
+        letter-spacing: 1px;
+        @media (max-width: $breakpoint-tablet) {
+                width: 90%;
+            }
+        h1 {
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 2em;
+            }
+        }
+    }
+}

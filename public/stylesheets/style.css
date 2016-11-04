@@ -1,0 +1,354 @@
+/*----------------------------
+Sass File
+-----------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*-------------------------------
+Base Colors for WestWerk
+------------------------------*/
+.site {
+  width: 100%;
+  position: relative; }
+
+.team {
+  height: 500px; }
+
+.employee {
+  height: 200px; }
+
+.site__section {
+  width: 0 !important; }
+
+.site__section {
+  background-color: #fff;
+  color: #191c1f;
+  text-align: center; }
+  .site__section.site__section--btn {
+    background: #53585a;
+    width: 100%;
+    color: #fff;
+    float: left; }
+  .site__section hr {
+    max-width: 166px; }
+  .site__section .site__section__feature {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 100px 0; }
+    .site__section .site__section__feature h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 900; }
+    .site__section .site__section__feature a {
+      margin-top: 50px; }
+
+/*-------------------------------
+Main
+--------------------------------*/
+/* General */
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; }
+
+/*-------------------------------
+Naviagation
+------------------------------*/
+/* Header */
+#site__hd {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  background: #191c1f;
+  z-index: 10;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background: rgba(0, 0, 0, 0.7); }
+  #site__hd h1 {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 25px auto 22px 230px; }
+    #site__hd h1 a {
+      background: url(../images/Logo.png) no-repeat;
+      text-indent: 200%;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 161px;
+      height: 25px;
+      display: block; }
+  #site__hd nav {
+    float: right;
+    position: absolute;
+    right: 230px; }
+    #site__hd nav ul {
+      padding: 0;
+      margin: 23px; }
+      #site__hd nav ul li {
+        display: inline-block; }
+        #site__hd nav ul li:not(:first-child) {
+          margin-left: 40px; }
+        #site__hd nav ul li a {
+          color: #fff; }
+          #site__hd nav ul li a:hover {
+            color: #2eab9c;
+            text-decoration: none; }
+
+/*------------------------------
+ Typography
+ -----------------------------*/
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 0 0 0.5rem; }
+
+h1 {
+  font-size: 48px;
+  font-size: 4.8rem; }
+
+h2 {
+  font-size: 36px;
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 30px;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+h5 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+h6 {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+p {
+  line-height: 1.75;
+  margin: 0.5em 0 1em; }
+
+/*-------------------------------
+Banner
+--------------------------------*/
+.site__section--bk {
+  background: url(../images/banner.png);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  .site__section--bk .site__section__feature {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 280px;
+    text-align: center;
+    letter-spacing: 1px; }
+    @media (max-width: 768px) {
+      .site__section--bk .site__section__feature {
+        width: 90%; } }
+    @media (max-width: 768px) {
+      .site__section--bk .site__section__feature h1 {
+        font-size: 2em; } }
+
+.site__section .blocks {
+  font-size: 0; }
+
+.site__section .blocks--2up .blocks__item {
+  width: 50%;
+  height: 467px;
+  display: inline-block;
+  float: left;
+  font-size: 1.3em; }
+
+.site__section .blocks__item--boise {
+  background: url(../images/stadium.png);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+.site__section .blocks__item--rush {
+  background: url(../images/Exercise.png);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+.site__section .blocks__item--color {
+  background: #35bfae;
+  color: #fff; }
+
+/* Links */
+a, a:visited {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none; }
+
+a:hover {
+  color: #555;
+  text-decoration: underline; }
+
+/* Buttons */
+a.button {
+  display: inline-block;
+  background: #35bfae;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  padding: 10px 120px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+a.button:hover {
+  background: #191c1f;
+  text-decoration: none; }
+
+.site__section .site__section--accordion {
+  padding: 70px 0;
+  float: left;
+  width: 100%; }
+
+.accordion {
+  float: left;
+  width: 100%; }
+  .accordion h2 {
+    color: #191c1f;
+    text-transform: uppercase; }
+
+.accordion-intro h2:before {
+  margin: 0 10px 0 0; }
+
+.ac-row {
+  background: #35bfae;
+  border-top: solid 1px #ccc;
+  max-width: 1168px;
+  margin: 0 auto;
+  position: relative; }
+  .ac-row:first-of-type {
+    margin-top: 60px; }
+  .ac-row h5 {
+    font-style: uppercase;
+    color: #fff; }
+  .ac-row:last-of-type {
+    border-bottom: solid 1px #fff; }
+
+.ac-title {
+  cursor: pointer;
+  padding: 20px 50px 20px 20px;
+  text-transform: capitalize;
+  text-align: left; }
+  .ac-title:after {
+    color: #fff;
+    font-family: FontAwesome;
+    content: '\f0d7';
+    font-size: 2.4rem;
+    font-weight: normal;
+    position: absolute;
+    right: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.active .ac-title:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.ac-content {
+  display: none;
+  padding: 20px;
+  text-align: left;
+  background: #53585a;
+  color: #fff; }
+
+footer {
+  background: #003333;
+  float: left;
+  width: 100%;
+  padding: 45px 20px 60px 20px; }
+  footer .ft__section {
+    max-width: 1168px;
+    margin: 0 auto; }
+    footer .ft__section .ft__section--logo {
+      display: inline-block; }
+      footer .ft__section .ft__section--logo img {
+        margin-left: 20px; }
+    footer .ft__section ul {
+      float: right;
+      margin-right: 70px; }
+      footer .ft__section ul li {
+        display: inline-block;
+        vertical-align: middle; }
+        footer .ft__section ul li:not(:first-of-type) {
+          margin-left: 10px; }
+        footer .ft__section ul li:hover {
+          color: #2eab9c; }

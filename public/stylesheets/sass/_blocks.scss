@@ -1,0 +1,43 @@
+/////////////////////////////
+//Blocks
+////////////////////////////
+.site__section {
+    .blocks {
+        font-size: 0;
+    }
+    .blocks--2up {
+        .blocks__item {
+            width: 50%;
+            min-width: 400px;
+            height: 467px;
+            display: inline-block;
+            float: left;
+            font-size: 1.3em;
+        }
+    }
+    .feature {
+        max-width: 630px;
+        margin: 0 auto;
+        padding: 100px 0;
+        img {
+            width: 64%;
+            max-width: 440px;
+        }
+    }
+    .blocks__item--boise {
+        background: url(/images/stadium.png);
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    .blocks__item--rush {
+        background: url(/images/Exercise.png);
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    .blocks__item--color {
+        background: $color-green;
+        color: $color-white;
+    }
+}

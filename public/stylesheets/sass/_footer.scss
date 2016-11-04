@@ -1,0 +1,71 @@
+//////////////////////////////
+// Footer
+/////////////////////////////
+
+footer {
+    background: #003333;
+    float: left;
+    width: 100%;
+    padding: 45px 20px 60px 20px;
+    .ft__section {
+        max-width: 1168px;
+        margin: 0 auto;
+        .ft__section--logo {
+            display: inline-block;
+            img {
+                margin-left: 20px;
+            }
+        }
+        ul {
+            float: right;
+            margin-right: 70px;
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                &:not(:first-of-type) {
+                    margin-left: 10px;
+                }
+                &:hover {
+                    color: $color-green-hover;
+                }
+            }
+        }
+    }
+}
+
+nav#menu {
+    @media (max-width: 900px) {
+        float: none;
+        margin: 0;
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+header nav #menu-icon {
+    display: none;
+    @media (max-width: 900px) {
+        display: block;
+        position: absolute;
+        top: 42px;
+        height: 35px;
+        left: 115px;
+        margin: 0;
+        padding: 10px 35px 10px 0;
+        cursor: pointer;
+        visibility: visible;
+        transform: translate(0, 50%);
+        span:before {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 35px;
+            top: 15px;
+            right: 0;
+            background: $color-green;
+            border-radius: 1px;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            content: '';
+        }
+    }
+}

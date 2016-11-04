@@ -1,0 +1,15 @@
+/////////////////////////////////
+//Media Query BreakPoints
+///////////////////////////////
+
+$large-desktop: rem(1680);
+$desktop: rem(1366);
+$tablet-landscape: rem(1024);
+$tablet-portrait: 768px;
+$phone-landscape: rem(640);
+$phone-portrait: rem(360);
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+
+}

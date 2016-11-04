@@ -1,0 +1,57 @@
+//////////////////////////////
+// TEAM SECTION
+/////////////////////////////
+.site__section {
+    &.site__section--team {
+        float: left;
+    }
+    .team__container {
+        float: left;
+        padding: 50px 0;
+    .profile {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        margin: 0;
+        &:hover .hidden-info {
+            top: 0;
+        }
+        img {
+            max-width: 316px;
+            float: left;
+            @media (max-width: 768px) {
+                max-width: 166px;
+            }
+        }
+        .hidden-info {
+            position: absolute;
+            top: 100%;
+            background: rgba(51, 204, 153, 0.8);
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            .team__container--text {
+                color: $color-white;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+                h2, h4 {
+                    @media (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
+                }
+            }
+            }
+        }
+    }
+    .team-button {
+        float: left;
+        width: 100%;
+        padding: 20px 0 70px 0;
+    }
+}

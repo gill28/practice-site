@@ -1,0 +1,137 @@
+/*-------------------------------
+Naviagation
+------------------------------*/
+
+/* Header */
+#site__hd {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: $color-black;
+    z-index: 10;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    background: rgba(0, 0, 0, 0.7);
+    h1 {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        margin: 25px auto 22px 100px;
+        a {
+            background: url(/images/Logo.png) no-repeat;
+            text-indent: 200%;
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 161px;
+            height: 25px;
+            display: block;
+        }
+    }
+}
+
+/* =Nav
+-------------------------------------------------------------- */
+/* =Nav
+-------------------------------------------------------------- */
+#nav-trigger {
+  display: none;
+  text-align: center;
+}
+  #nav-trigger span {
+    display: inline-block;
+    padding: 22px 30px;
+    color: $color-white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#nav-trigger span:hover {
+      color: $color-green-hover;
+}
+#nav-trigger span.open:after {
+      border-left: solid 10px transparent;
+      border-top: none;
+      border-bottom: solid 10px #fff;
+      border-right: solid 10px transparent;
+}
+
+nav {
+  margin-bottom: 30px;
+}
+
+nav#nav-main {
+  padding: 10px 0;
+  margin-right: 100px;
+}
+nav#nav-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav#nav-main li {
+    display: inline-block;
+    padding: 0 5px;
+}
+nav#nav-main li:last-child {
+      border-right: none;
+}
+nav#nav-main a {
+    display: block;
+    color: white;
+    padding: 10px 30px;
+}
+nav#nav-main a:hover {
+    color: $color-green;
+    text-decoration: none;
+}
+
+nav#nav-mobile {
+  position: relative;
+  display: none;
+}
+nav#nav-mobile ul {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -2px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: $color-md-grey;
+}
+nav#nav-mobile li {
+    display: block;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-bottom: solid 1px #fff; }
+    nav#nav-mobile li:last-child {
+      border-bottom: none;
+}
+nav#nav-mobile a {
+    display: block;
+    color: white;
+    padding: 10px 30px;
+}
+nav#nav-mobile a:hover {
+      color: $color-green-hover;
+      background: $color-black;
+      text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  #nav-trigger {
+        display: block;
+    }
+
+  nav#nav-main {
+        display: none;
+    }
+
+  nav#nav-mobile {
+        display: block;
+        width: 100%;
+    }
+}
