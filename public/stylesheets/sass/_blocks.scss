@@ -23,6 +23,12 @@
             width: 64%;
             max-width: 440px;
         }
+        .feature-content {
+            h4 {
+                font-size: 1.6rem;
+                padding: 25px 0;
+            }
+        }
     }
     .blocks__item--boise {
         background: url(/images/stadium.png);
